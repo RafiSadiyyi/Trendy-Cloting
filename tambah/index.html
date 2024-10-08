@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="/img/logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">TRENDY CLOTHING</span>
+                    <span class="lokasi">medan - sumatra utara</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <br>
+                    <hr color="black">
+                    <br>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-add-to-queue icon'></i>
+                            <span class="text nav-text">Tambah Pesanan</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bxs-shopping-bag-alt icon'></i>
+                            <span class="text nav-text">Keranjang</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-list-ul icon' ></i>
+                            <span class="text nav-text">List Penjualan</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Tambah Pesanan</div>
+        <!-- search -->
+        <div class="nav-container">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="search" placeholder="Cari di sini...">
+                    <button><i class='bx bx-search'></i></button>
+                </div>
+                <div class="tanggal">
+                    <input type="date" name="" id="">
+                </div>
+            </div>
+        </div>
+        <!-- end search -->
+        <!-- add-to-cart -->
+        <div class="cart-container">
+
+            
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Dress Midi Flower</h3>
+                    <p class="product-price">Rp 115.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+            
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Dress Midi Flower</h3>
+                    <p class="product-price">Rp 115.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Dress Midi Flower</h3>
+                    <p class="product-price">Rp 115.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/logo.png" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Dress Midi Flower</h3>
+                    <p class="product-price">Rp 115.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+;
+    </script>
+
+</body>
+</html>
