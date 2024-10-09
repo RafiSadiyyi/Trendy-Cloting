@@ -29,16 +29,16 @@
 
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/dasboard/index.html">
                             <i class='bx bx bxs-dashboard icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
                     <br>
-                    <hr color="black">
+                    <hr color="#017AFF">
                     <br>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="/tambah/index.html">
                             <i class='bx bx-add-to-queue icon'></i>
                             <span class="text nav-text">Tambah Pesanan</span>
                         </a>
@@ -75,7 +75,10 @@
     </nav>
 
     <section class="home">
-        <div class="text">Tambah Pesanan</div>
+        <div class="head">
+            <div class="text">Tambah Pesanan</div>
+            <div class="info"><i class='bx bx-user'></i>Kasir</div>
+        </div>
         <!-- search -->
         <div class="nav-container">
             <div class="search-container">
@@ -84,7 +87,7 @@
                     <button><i class='bx bx-search'></i></button>
                 </div>
                 <div class="tanggal">
-                    <input type="date" name="" id="">
+                    <input type="date" name="" id="" class="Date">
                 </div>
             </div>
         </div>
@@ -95,7 +98,7 @@
             
             <form class="cart" action="#" method="POST">
                 <div class="image-placeholder">
-                    <img src="/img/logo.png" alt="">
+                    <img src="/img/dress.jpg" alt="">
                 </div>
                 <div class="details">
                     <h3 class="product-name">Dress Midi Flower</h3>
@@ -111,11 +114,11 @@
             
             <form class="cart" action="#" method="POST">
                 <div class="image-placeholder">
-                    <img src="/img/logo.png" alt="">
+                    <img src="/img/rok.jpg" alt="">
                 </div>
                 <div class="details">
-                    <h3 class="product-name">Dress Midi Flower</h3>
-                    <p class="product-price">Rp 115.000</p>
+                    <h3 class="product-name">Rok Knit Premium</h3>
+                    <p class="product-price">Rp 60.000</p>
                     <div class="quantity">
                         <button type="button" class="decrement">-</button>
                         <input type="number" name="quantity" value="1" min="1" class="quantity-input">
@@ -127,11 +130,11 @@
 
             <form class="cart" action="#" method="POST">
                 <div class="image-placeholder">
-                    <img src="/img/logo.png" alt="">
+                    <img src="/img/tshirt.jpg" alt="">
                 </div>
                 <div class="details">
-                    <h3 class="product-name">Dress Midi Flower</h3>
-                    <p class="product-price">Rp 115.000</p>
+                    <h3 class="product-name">T-shirt Tie Die Multicolor</h3>
+                    <p class="product-price">Rp 50.000</p>
                     <div class="quantity">
                         <button type="button" class="decrement">-</button>
                         <input type="number" name="quantity" value="1" min="1" class="quantity-input">
@@ -143,11 +146,11 @@
 
             <form class="cart" action="#" method="POST">
                 <div class="image-placeholder">
-                    <img src="/img/logo.png" alt="">
+                    <img src="/img/jaket.jpg" alt="">
                 </div>
                 <div class="details">
-                    <h3 class="product-name">Dress Midi Flower</h3>
-                    <p class="product-price">Rp 115.000</p>
+                    <h3 class="product-name">Jaket Denim Wanita</h3>
+                    <p class="product-price"> 130.000</p>
                     <div class="quantity">
                         <button type="button" class="decrement">-</button>
                         <input type="number" name="quantity" value="1" min="1" class="quantity-input">
@@ -156,6 +159,39 @@
                     <button type="submit" class="add-to-cart">tambah</button>
                 </div>
             </form>
+            
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/crop.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Crop Top Lace Rihanna</h3>
+                    <p class="product-price">Rp 165.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+
+            <form class="cart" action="#" method="POST">
+                <div class="image-placeholder">
+                    <img src="/img/leging.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h3 class="product-name">Legging Scuba</h3>
+                    <p class="product-price">Rp 65.000</p>
+                    <div class="quantity">
+                        <button type="button" class="decrement">-</button>
+                        <input type="number" name="quantity" value="1" min="1" class="quantity-input">
+                        <button type="button" class="increment">+</button>
+                    </div>
+                    <button type="submit" class="add-to-cart">tambah</button>
+                </div>
+            </form>
+
             
         </div>
     </section>
@@ -174,9 +210,10 @@ toggle.addEventListener("click" , () =>{
 
 searchBtn.addEventListener("click" , () =>{
     sidebar.classList.remove("close");
-})
-;
-    </script>
+});
 
+
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>

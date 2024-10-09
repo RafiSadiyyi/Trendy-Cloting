@@ -11,10 +11,10 @@
     /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #000000;
+    --primary-color: #017AFF;
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDD;
-    --text-color: #707070;
+    --text-color: #64A5FF;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -27,7 +27,6 @@ body{
     min-height: 100vh;
     background-color: var(--body-color);
     transition: var(--tran-05);
-    min-height: 2000px;
 }
 
 ::selection{
@@ -190,17 +189,7 @@ body.dark .sidebar header .toggle{
 .menu-bar::-webkit-scrollbar{
     display: none;
 }
-.sidebar .menu-bar .mode{
-    border-radius: 6px;
-    background-color: var(--primary-color-light);
-    position: relative;
-    transition: var(--tran-05);
-}
 
-.menu-bar .mode .sun-moon{
-    height: 50px;
-    width: 60px;
-}
 
 .menu-bar .bottom-content .toggle-switch{
     position: absolute;
@@ -248,7 +237,7 @@ body.dark .sidebar header .toggle{
 .home .text{
     font-size: 30px;
     font-weight: 500;
-    color: var(--text-color);
+    color: black;
     padding: 12px 60px;
 }
 /* Home */
@@ -256,6 +245,26 @@ body.dark .sidebar header .toggle{
     left: 78px;
     height: 100vh;
     width: calc(100% - 78px);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 30px;
+}
+.info{
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color-light);
+    font-weight:400;
+    font-size: 20px;
+    color: var(--primary-color-light);
 }
 .nav-container{
     width: 100%;
@@ -265,7 +274,7 @@ body.dark .sidebar header .toggle{
     padding: 0 10px;
 }
 .search-container{
-    background-color: #333;
+    background-color: var(--primary-color);
     width: 100%;
     height: 100px;
     display: flex;
@@ -278,7 +287,7 @@ body.dark .sidebar header .toggle{
 .search-bar {
     width: 500px;
     height: 50px;
-    background-color: #f7f7f7;
+    background-color: var(--sidebar-color);
     border: 1px solid #ddd;
     border-radius: 5px;
     display: flex;
@@ -306,7 +315,7 @@ body.dark .sidebar header .toggle{
     height: 50px;
     border: none;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: var(--text-color);
     color: #fff;
     cursor: pointer;
 }
@@ -315,12 +324,19 @@ body.dark .sidebar header .toggle{
     font-size: 18px;
     margin: 0 10px;
 }
+.Date{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    
+}
 
 
 .cart {
     width: 530px;
     display: flex;
-    background-color: #D2A8F3;
+    background-color: var(--primary-color-light);
     border-radius: 15px;
     padding: 20px;
     align-items: center;
@@ -347,11 +363,12 @@ body.dark .sidebar header .toggle{
     margin: 0;
     font-size: 1.5em;
     font-weight: bold;
+    color: var(--primary-color-light);
 }
 
 .product-price {
+    color: var(--primary-color-light);
     font-size: 1.2em;
-    color: #000;
     margin: 5px 0;
 }
 
@@ -364,6 +381,18 @@ body.dark .sidebar header .toggle{
 }
 .cart{
     margin: 10px;
+    background-color: var(--text-color);
+    opacity: 0;  
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;  
+    }
+    100% {
+        opacity: 1;  
+    }
 }
 
 .quantity {
@@ -373,7 +402,6 @@ body.dark .sidebar header .toggle{
 }
 
 button {
-    background-color: #fff;
     border: 1px solid #ccc;
     padding: 5px 10px;
     font-size: 1em;
@@ -390,6 +418,8 @@ button:active {
     text-align: center;
     margin: 0 10px;
     font-size: 1em;
+    border:none ;
+    border-radius: 4px;
 }
 
 .add-to-cart {
